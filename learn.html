@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learn | EcoWise</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <h1><a href="index.html" class="logo">EcoWise</a></h1>
+      <nav class="nav" id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="learn.html" class="active">Learn</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="impact.html">Impact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <h2>Test Your Sustainability Knowledge</h2>
+      <p>No downloads — just fun, interactive learning.</p>
+
+      <!-- True/False Quiz -->
+      <div class="quiz-container">
+        <h3>🌍 Quick Quiz</h3>
+        <p id="question">True or False: Recycling alone can solve the plastic crisis.</p>
+
+        <button class="quiz-btn" onclick="checkAnswer(false)">False</button>
+        <button class="quiz-btn" onclick="checkAnswer(true)">True</button>
+
+        <div id="quizFeedback" class="result-box"></div>
+      </div>
+
+      <!-- Infographic -->
+      <div class="infographic">
+        <h3>Did You Know?</h3>
+        <ul>
+          <li>It takes 500+ years for a plastic bottle to decompose.</li>
+          <li>One person can save over 150 plastic bottles/year by switching to a reusable bottle.</li>
+          <li>Buying second-hand reduces carbon emissions from manufacturing.</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 EcoWise. All rights reserved.</p>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <a href="#top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

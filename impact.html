@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Impact | EcoWise</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <h1><a href="index.html" class="logo">EcoWise</a></h1>
+      <nav class="nav" id="mainNav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="learn.html">Learn</a></li>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="impact.html" class="active">Impact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" onclick="toggleMenu()">☰</button>
+      <button id="darkModeToggle"><i class="fas fa-moon"></i></button>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <h2>Calculate Your Environmental Impact</h2>
+      <p>See how your habits affect the planet — and how to improve.</p>
+
+      <form id="impactForm">
+        <label>Plastic Bottles Used Per Week:</label>
+        <input type="number" id="bottles" min="0" required />
+
+        <label>Food Waste (Estimated %):</label>
+        <input type="range" id="foodWaste" min="0" max="100" value="50" />
+        <span id="foodWasteValue">50%</span>
+
+        <label>Do You Recycle?</label>
+        <select id="recycles">
+          <option value="yes">Yes</option>
+          <option value="sometimes">Sometimes</option>
+          <option value="no">No</option>
+        </select>
+
+        <button type="submit" class="btn">Calculate My Impact</button>
+      </form>
+
+      <div id="result" class="result-box"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 EcoWise. All rights reserved.</p>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <a href="#top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

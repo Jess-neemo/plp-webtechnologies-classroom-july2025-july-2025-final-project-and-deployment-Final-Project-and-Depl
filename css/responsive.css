@@ -1,0 +1,115 @@
+/* Mobile Menu */
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #2e7d32;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-in-out;
+  }
+
+  .nav.active {
+    max-height: 300px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* Typography */
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .features h2 {
+    font-size: 1.8rem;
+  }
+
+  .feature-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .cta h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+body.dark-mode .header,
+body.dark-mode footer,
+body.dark-mode .stats,
+body.dark-mode .cta,
+body.dark-mode .quiz-container,
+body.dark-mode #impactForm,
+body.dark-mode #contactForm,
+body.dark-mode .infographic {
+  background: #2d3748 !important;
+  color: #e0e0e0;
+}
+
+body.dark-mode .feature {
+  background: #1f2937;
+  border: 1px solid #4a5568;
+  color: #e0e0e0;
+}
+
+body.dark-mode .feature i {
+  color: #48bb78;
+}
+
+body.dark-mode .btn {
+  background: #48bb78;
+}
+
+body.dark-mode .btn:hover {
+  background: #38a169;
+}
+
+body.dark-mode .result-box {
+  background: #2d3748;
+  border-left-color: #48bb78;
+  color: #e0e0e0;
+}
+
+body.dark-mode .quiz-btn {
+  background: #38a169;
+}
+
+body.dark-mode .quiz-btn:hover {
+  background: #2f855a;
+}
+
+body.dark-mode footer {
+  background: #1a202c;
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background: #2d3748;
+  border-color: #a0aec0;
+  color: #e0e0e0;
+}
